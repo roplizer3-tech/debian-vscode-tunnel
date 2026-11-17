@@ -1,0 +1,14 @@
+[Unit]
+Description=Visual Studio Code Remote Tunnel Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/workspace
+ExecStart=/usr/local/bin/code tunnel --accept-server-license-terms --name cranl-debian-workspace
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
