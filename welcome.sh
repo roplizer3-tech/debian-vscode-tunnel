@@ -1,20 +1,24 @@
 #!/bin/bash
-cat << 'EOF'
+BLUE="\033[1;34m"
+GREEN="\033[1;32m"
+YELLOW="\033[1;33m"
+CYAN="\033[1;36m"
+WHITE="\033[1;37m"
+RESET="\033[0m"
 
- [1;34m╔══════════════════════════════════════════════════════════════════════╗ [0m
- [1;34m║ [0m   [1;32mDebian Linux Cloud Environment (Debian 12 Bookworm) [0m                 [1;34m║ [0m
- [1;34m╠══════════════════════════════════════════════════════════════════════╣ [0m
- [1;34m║ [0m   [1;33m* systemctl: [0m Enabled & ready (docker-systemctl-replacement)        [1;34m║ [0m
- [1;34m║ [0m   [1;33m* Web Terminal: [0m Running via ttyd                                   [1;34m║ [0m
- [1;34m║ [0m   [1;33m* Working Directory: [0m /workspace                                     [1;34m║ [0m
- [1;34m║ [0m   [1;33m* Persistent Data: [0m   /data                                          [1;34m║ [0m
- [1;34m╠══════════════════════════════════════════════════════════════════════╣ [0m
- [1;34m║ [0m   [1;36m[VS Code Server Tunnel] [0m                                             [1;34m║ [0m
- [1;34m║ [0m  To link this workspace to https://vscode.dev, run:                  [1;34m║ [0m
- [1;34m║ [0m       [1;37mcode-tunnel-start [0m                                               [1;34m║ [0m
- [1;34m║ [0m  or manage it as a systemd service:                                  [1;34m║ [0m
- [1;34m║ [0m       [1;37msystemctl start code-tunnel [0m                                     [1;34m║ [0m
- [1;34m║ [0m       [1;37msystemctl status code-tunnel [0m                                    [1;34m║ [0m
- [1;34m╚══════════════════════════════════════════════════════════════════════╝ [0m
-
-EOF
+echo -e "${BLUE}╔══════════════════════════════════════════════════════════════════════╗${RESET}"
+echo -e "${BLUE}║${RESET}  ${GREEN}Debian Linux Cloud Environment (Debian 12 Bookworm)${RESET}                 ${BLUE}║${RESET}"
+echo -e "${BLUE}╠══════════════════════════════════════════════════════════════════════╣${RESET}"
+echo -e "${BLUE}║${RESET}  ${YELLOW}* systemctl:${RESET} Enabled & ready (docker-systemctl-replacement)        ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}  ${YELLOW}* Web Terminal:${RESET} Running via ttyd                                   ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}  ${YELLOW}* Working Directory:${RESET} /workspace                                     ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}  ${YELLOW}* Persistent Data:${RESET}   /data                                          ${BLUE}║${RESET}"
+echo -e "${BLUE}╠══════════════════════════════════════════════════════════════════════╣${RESET}"
+echo -e "${BLUE}║${RESET}  ${CYAN}[VS Code Server Tunnel]${RESET}                                             ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}  To link this workspace to https://vscode.dev, run:                  ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}      ${WHITE}code-tunnel-start${RESET}                                               ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}  or manage it as a systemd service:                                  ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}      ${WHITE}systemctl start code-tunnel${RESET}                                     ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}      ${WHITE}systemctl status code-tunnel${RESET}                                    ${BLUE}║${RESET}"
+echo -e "${BLUE}╚══════════════════════════════════════════════════════════════════════╝${RESET}"
+echo ""
