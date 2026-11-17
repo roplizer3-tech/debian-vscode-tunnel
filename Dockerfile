@@ -45,8 +45,8 @@ RUN curl -fsSL -o /usr/local/bin/systemctl https://raw.githubusercontent.com/gdr
     chmod 755 /usr/local/bin/systemctl && \
     ln -sf /usr/local/bin/systemctl /bin/systemctl
 
-# Install official Microsoft VS Code CLI (code)
-RUN curl -fsSL 'https://code.visualstudio.com/sha/download?build=stable&os=cli-linux-x64' | tar -xz -C /usr/local/bin && \
+# Install official Microsoft VS Code CLI (code) from latest stable release
+RUN curl -fsSL 'https://update.code.visualstudio.com/latest/cli-linux-x64/stable' | tar -xz -C /usr/local/bin && \
     chmod 755 /usr/local/bin/code
 
 # Create workspace and data persistence directories
