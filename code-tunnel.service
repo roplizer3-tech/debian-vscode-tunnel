@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/workspace
-ExecStart=/usr/local/bin/code tunnel --accept-server-license-terms --name cranl-debian-workspace
+ExecStart=/usr/local/bin/code tunnel --accept-server-license-terms --name cranl-debian
 Restart=always
 RestartSec=5
 

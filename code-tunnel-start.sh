@@ -1,5 +1,5 @@
 #!/bin/bash
-TUNNEL_NAME="${VSCODE_TUNNEL_NAME:-cranl-debian-workspace}"
+TUNNEL_NAME="${VSCODE_TUNNEL_NAME:-cranl-debian}"
 
 echo "=========================================================="
 echo " Starting VS Code Remote Tunnel: $TUNNEL_NAME"

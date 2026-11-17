@@ -17,6 +17,8 @@ echo -e "${BLUE}╠════════════════════�
 echo -e "${BLUE}║${RESET}  ${CYAN}[VS Code Server Tunnel]${RESET}                                             ${BLUE}║${RESET}"
 echo -e "${BLUE}║${RESET}  To link this workspace to https://vscode.dev, run:                  ${BLUE}║${RESET}"
 echo -e "${BLUE}║${RESET}      ${WHITE}code-tunnel-start${RESET}                                               ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}  or:                                                                 ${BLUE}║${RESET}"
+echo -e "${BLUE}║${RESET}      ${WHITE}code tunnel --accept-server-license-terms --name cranl-debian${RESET}      ${BLUE}║${RESET}"
 echo -e "${BLUE}║${RESET}  or manage it as a systemd service:                                  ${BLUE}║${RESET}"
 echo -e "${BLUE}║${RESET}      ${WHITE}systemctl start code-tunnel${RESET}                                     ${BLUE}║${RESET}"
 echo -e "${BLUE}║${RESET}      ${WHITE}systemctl status code-tunnel${RESET}                                    ${BLUE}║${RESET}"
